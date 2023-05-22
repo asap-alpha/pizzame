@@ -5,10 +5,10 @@ import './RecipeList.css'
 
 import { Link } from 'react-router-dom'
 
-interface IRecipeList {
-    data:any
-}
-export default function RecipeList({data}:IRecipeList){
+// interface IRecipeList {
+//     data:any
+// }
+export default function RecipeList({data}:any){
     return (
         <div className='Recipe-List'>
     {
@@ -17,7 +17,7 @@ export default function RecipeList({data}:IRecipeList){
                 <h3>{recipe.title}</h3>
                 <p>{recipe.cookingTime} to make.</p>
                 <div>{recipe.method.substring(0,100)}...</div>
-                <Link to={`/recipe/${recipe.id}`}>Cook this</Link>
+                <Link  to={`/recipe/${recipe.id}`}>Cook this</Link>
            </div>
           )) 
     }
