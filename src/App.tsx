@@ -21,15 +21,15 @@ function App() {
             <Home/>
           </Route>
 
-          <Route path="/create">
+          <Route exact path="/create">
             <Create/>
           </Route>
 
-          <Route path="/search">
+          <Route exact path="/search">
             <Search/>
           </Route>
 
-          <Route path="/recipe/:id">
+          <Route exact path="/recipe/:id">
             <Recipe/>
           </Route>
         </Switch>
